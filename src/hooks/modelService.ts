@@ -16,7 +16,7 @@ const getModelData = async () => {
       },
     },
   });
-  return data?.data?.data;
+  return data?.data?.data?.rows;
 };
 
 export const ModelService = {
