@@ -10,11 +10,11 @@ import ViewCanvas from "@/components/ViewCanvas";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Tasty — Chef's Table, Delivered",
+  title: "The Rusty Ladle — Chef's Table, Delivered",
   description:
     "5 signature dishes. Real ingredients. Zero compromises. Fresh food made with care.",
   openGraph: {
-    title: "Tasty — Chef's Table, Delivered",
+    title: "The Rusty Ladle — Chef's Table, Delivered",
     description:
       "5 signature dishes. Real ingredients. Zero compromises. Fresh food made with care.",
   },

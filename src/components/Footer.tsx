@@ -43,7 +43,7 @@ export default function Footer() {
         {/* Divider */}
         <div className="border-t border-slate-800 pt-8">
           <div className="flex flex-col items-center justify-between gap-4 text-sm text-slate-500 sm:flex-row">
-            <p>© 2026 Tasty. All rights reserved.</p>
+            <p>© 2026 The Rusty Ladle. All rights reserved.</p>
             <div className="flex gap-6">
               <Link href="#" className="transition-colors hover:text-cyan-300">
                 Privacy Policy

@@ -8,9 +8,9 @@ export function FizziLogo(props: SVGProps<SVGSVGElement>) {
       {...props}
       viewBox="0 0 240 80"
       className={clsx("group", props.className)}
-      aria-labelledby="tasty-logo-title"
+      aria-labelledby="rusty-ladle-logo-title"
     >
-      <title id="tasty-logo-title">Tasty</title>
+      <title id="rusty-ladle-logo-title">The Rusty Ladle</title>
       <text
         x="50%"
         y="50%"
@@ -19,9 +19,9 @@ export function FizziLogo(props: SVGProps<SVGSVGElement>) {
         fill="currentColor"
         fontFamily="Inter, system-ui, sans-serif"
         fontWeight="900"
-        fontSize="52"
+        fontSize="28"
       >
-        Tasty
+        The Rusty Ladle
       </text>
     </svg>
   );

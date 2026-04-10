@@ -16,7 +16,7 @@ export default function CircleText({
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 200 200"
       className={clsx("circle-text animate-spin-slow origin-center", className)}
-      aria-label="Tasty • Fresh • Daily • Real •"
+      aria-label="The Rusty Ladle • Fresh • Daily • Real •"
     >
       <circle cx="100" cy="100" r="100" fill={backgroundColor} />
       <defs>
