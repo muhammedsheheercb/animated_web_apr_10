@@ -6,7 +6,7 @@ import {
   PrismicText,
   SliceComponentProps,
 } from "@prismicio/react";
-import { Center, Environment, View } from "@react-three/drei";
+import { Environment, View } from "@react-three/drei";
 import { useRef, useState } from "react";
 import clsx from "clsx";
 import { Group } from "three";
@@ -23,15 +23,15 @@ const FLAVORS: {
   color: string;
   name: string;
 }[] = [
-  { flavor: "blackCherry", color: "#710523", name: "Black Cherry" },
-  { flavor: "grape", color: "#572981", name: "Grape Goodness" },
-  { flavor: "lemonLime", color: "#164405", name: "Lemon Lime" },
+  { flavor: "blackCherry", color: "#7C2D12", name: "Spicy Chicken Bowl" },
+  { flavor: "grape", color: "#4C1D95", name: "Creamy Pasta Delight" },
+  { flavor: "lemonLime", color: "#14532D", name: "Fresh Garden Salad" },
   {
     flavor: "strawberryLemonade",
-    color: "#690B3D",
-    name: "Strawberry Lemonade",
+    color: "#831843",
+    name: "Margherita Pizza",
   },
-  { flavor: "watermelon", color: "#4B7002", name: "Watermelon Crush" },
+  { flavor: "watermelon", color: "#14532D", name: "Buddha Bowl" },
 ];
 
 /**
@@ -84,7 +84,7 @@ const Carousel = ({ slice }: CarouselProps): JSX.Element => {
     <section
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
-      className="carousel relative grid h-screen grid-rows-[auto,4fr,auto] justify-center overflow-hidden bg-white py-12 text-white"
+      className="carousel relative grid h-screen grid-rows-[auto,4fr,auto] justify-center overflow-hidden bg-white py-20 text-white"
     >
       <div className="background pointer-events-none absolute inset-0 bg-[#710523] opacity-50" />
 
@@ -103,14 +103,14 @@ const Carousel = ({ slice }: CarouselProps): JSX.Element => {
         />
         {/* Can */}
         <View className="aspect-square h-[70vmin] min-h-40">
-          <Center position={[0, 0, 1.5]}>
-            <FloatingCan
-              ref={sodaCanRef}
-              floatIntensity={0.3}
-              rotationIntensity={1}
-              flavor={FLAVORS[currentFlavorIndex].flavor}
-            />
-          </Center>
+          <FloatingCan
+            ref={sodaCanRef}
+            floatIntensity={0.2}
+            rotationIntensity={0.15}
+            floatingRange={[-0.05, 0.05]}
+            flavor={FLAVORS[currentFlavorIndex].flavor}
+            position={[0, 0.8, 1.5]}
+          />
 
           <Environment
             files="/hdr/lobby.hdr"
@@ -127,11 +127,11 @@ const Carousel = ({ slice }: CarouselProps): JSX.Element => {
         />
       </div>
 
-      <div className="text-area relative mx-auto text-center">
+      <div className="text-area relative mx-auto pb-4 text-center">
         <div className="text-wrapper text-4xl font-medium">
           <p>{FLAVORS[currentFlavorIndex].name}</p>
         </div>
-        <div className="mt-2 text-2xl font-normal opacity-90">
+        <div className="mt-3 text-2xl font-normal opacity-90">
           <PrismicRichText field={slice.primary.price_copy} />
         </div>
       </div>

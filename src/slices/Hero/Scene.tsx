@@ -88,23 +88,23 @@ export default function Scene({}: Props) {
       .to(groupRef.current.rotation, { y: Math.PI * 2 })
 
       // Can 1 - black cherry
-      .to(can1Ref.current.position, { x: -0.2, y: -0.7, z: -2 }, 0)
+      .to(can1Ref.current.position, { x: -0.2, y: -0.3, z: -2 }, 0)
       .to(can1Ref.current.rotation, { z: 0.3 }, 0)
 
       // Can 2 - Lemon Lime
-      .to(can2Ref.current.position, { x: 1, y: -0.2, z: -1 }, 0)
+      .to(can2Ref.current.position, { x: 1, y: 0.1, z: -1 }, 0)
       .to(can2Ref.current.rotation, { z: 0 }, 0)
 
       // Can 3 - Grape
-      .to(can3Ref.current.position, { x: -0.3, y: 0.5, z: -1 }, 0)
+      .to(can3Ref.current.position, { x: -0.3, y: 0.7, z: -1 }, 0)
       .to(can3Ref.current.rotation, { z: -0.1 }, 0)
 
       // Can 4 - Strawberry Lemonade
-      .to(can4Ref.current.position, { x: 0, y: -0.3, z: 0.5 }, 0)
+      .to(can4Ref.current.position, { x: 0, y: 0.1, z: 0.5 }, 0)
       .to(can4Ref.current.rotation, { z: 0.3 }, 0)
 
-      // Can 5 -Watermelon
-      .to(can5Ref.current.position, { x: 0.3, y: 0.5, z: -0.5 }, 0)
+      // Can 5 - Watermelon
+      .to(can5Ref.current.position, { x: 0.3, y: 0.7, z: -0.5 }, 0)
       .to(can5Ref.current.rotation, { z: -0.25 }, 0)
       .to(
         groupRef.current.position,

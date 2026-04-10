@@ -12,6 +12,7 @@ type FloatingCanProps = {
   rotationIntensity?: number;
   floatIntensity?: number;
   floatingRange?: [number, number];
+  position?: [number, number, number];
   children?: ReactNode;
 };
 
