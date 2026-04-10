@@ -1,4 +1,5 @@
 import localFont from "next/font/local";
+import { Metadata } from "next";
 
 import { PrismicPreview } from "@prismicio/next";
 import { repositoryName } from "@/prismicio";
@@ -7,6 +8,17 @@ import "./app.css";
 import Header from "@/components/Header";
 import ViewCanvas from "@/components/ViewCanvas";
 import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: "Tasty — Chef's Table, Delivered",
+  description:
+    "5 signature dishes. Real ingredients. Zero compromises. Fresh food made with care.",
+  openGraph: {
+    title: "Tasty — Chef's Table, Delivered",
+    description:
+      "5 signature dishes. Real ingredients. Zero compromises. Fresh food made with care.",
+  },
+};
 
 const alpino = localFont({
   src: "../../public/fonts/Alpino-Variable.woff2",

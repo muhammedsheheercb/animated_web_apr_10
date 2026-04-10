@@ -133,7 +133,7 @@ export function SodaCan({
     <BackendModelMesh
       modelUrl={modelUrl}
       flavor={flavor}
-      scale={0.7}
+      scale={1}
       rotation={[1.1, -Math.PI, 0]}
       position={[0, -0.8, 0]}
       {...props}
