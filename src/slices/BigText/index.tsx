@@ -17,13 +17,13 @@ const BigText = ({ slice }: BigTextProps): JSX.Element => {
       className="min-h-screen w-screen overflow-hidden bg-slate-900 text-cyan-300"
     >
       <h2 className="grid w-full gap-[3vw] py-10 text-center font-black uppercase leading-[.7]">
-        <div className="text-[34vw]">Soda</div>
+        <div className="text-[34vw]">Food</div>
         <div className="grid gap-[3vw] text-[34vw] md:flex md:text-[11vw]">
           <span className="inline-block">that </span>
-          <span className="inline-block max-md:text-[27vw]">makes </span>
-          <span className="inline-block max-md:text-[40vw]">you </span>
+          <span className="inline-block max-md:text-[27vw]">feeds </span>
+          <span className="inline-block max-md:text-[40vw]">your </span>
         </div>
-        <div className="text-[32vw]">Smile</div>
+        <div className="text-[32vw]">Soul</div>
       </h2>
     </section>
   );

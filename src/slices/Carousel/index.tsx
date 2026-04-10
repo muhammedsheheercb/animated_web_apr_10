@@ -88,7 +88,7 @@ const Carousel = ({ slice }: CarouselProps): JSX.Element => {
     >
       <div className="background pointer-events-none absolute inset-0 bg-[#710523] opacity-50" />
 
-      <WavyCircles className="absolute left-1/2 top-1/2 h-[120vmin] -translate-x-1/2 -translate-y-1/2 text-[#710523]" />
+      <WavyCircles className="absolute left-1/2 top-1/2 h-[120vmin] -translate-x-1/2 -translate-y-1/2 text-[#710523] md:py-16" />
 
       <h2 className="relative text-center text-5xl font-bold">
         <PrismicText field={slice.primary.heading} />
@@ -131,9 +131,9 @@ const Carousel = ({ slice }: CarouselProps): JSX.Element => {
         <div className="text-wrapper text-4xl font-medium">
           <p>{FLAVORS[currentFlavorIndex].name}</p>
         </div>
-        <div className="mt-3 text-2xl font-normal opacity-90">
+        {/* <div className="mt-3 text-2xl font-normal opacity-90">
           <PrismicRichText field={slice.primary.price_copy} />
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -119,16 +119,16 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
           <div className="grid auto-rows-min place-items-center text-center">
             <h1 className="hero-header text-7xl font-black uppercase leading-[.8] text-cyan-300 md:text-[9rem] lg:text-[13rem]">
               <TextSplitter
-                text={asText(slice.primary.heading)}
+                text="Fresh"
                 wordDisplayStyle="block"
                 className="hero-header-word"
               />
             </h1>
             <div className="hero-subheading mt-12 text-5xl font-semibold text-slate-100 lg:text-6xl">
-              <PrismicRichText field={slice.primary.subheading} />
+              <p>Chef&apos;s Table, Delivered.</p>
             </div>
             <div className="hero-body text-2xl font-normal text-slate-100">
-              <PrismicRichText field={slice.primary.body} />
+              <p>5 signature dishes. Real ingredients. Zero compromises.</p>
             </div>
             <Button
               buttonLink={slice.primary.button_link}
@@ -145,10 +145,10 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
           />
           <div>
             <h2 className="text-side-heading text-balance text-6xl font-black uppercase text-slate-100 lg:text-8xl">
-              <TextSplitter text={asText(slice.primary.second_heading)} />
+              <TextSplitter text="Try All Five Dishes" />
             </h2>
             <div className="text-side-body mt-4 max-w-xl text-balance text-xl font-normal text-slate-100">
-              <PrismicRichText field={slice.primary.second_body} />
+              <p>Our menu is crafted with real ingredients and seasonal vegetables. No shortcuts, no preservatives — just wholesome food made with care. Try all five dishes and find your favourite!</p>
             </div>
           </div>
         </div>

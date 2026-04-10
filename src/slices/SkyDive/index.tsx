@@ -21,11 +21,11 @@ const SkyDive = ({ slice }: SkyDiveProps): JSX.Element => {
       data-slice-variation={slice.variation}
       className="skydive h-screen"
     >
-      <h2 className="sr-only">{slice.primary.sentence}</h2>
+      <h2 className="sr-only">Freshly Made Daily</h2>
       <View className="h-screen w-screen">
         <Scene
           flavor={slice.primary.flavor}
-          sentence={slice.primary.sentence}
+          sentence="Freshly Made Daily"
         />
       </View>
     </Bounded>
